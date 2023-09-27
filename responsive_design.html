@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive designing</title>
+    <style>
+        html
+        {
+            font-size: 25px;
+        }
+       h1
+       {
+            text-align: center;
+            width: 400px;
+       }
+       .container
+       {
+           border: 2px solid red;
+           width: 100vw;
+           height: 100vh;
+           font-size: 10px;
+
+
+       }
+       #first
+       {
+            /* here em is dependent on the parent container and it changes accordingly when the diplay resolutin changes */
+            /* font-size: 3em;
+            padding: 3em; */
+       }
+       #second
+       {
+            /* this rem goes with html font size and react accordingly to the html page font */
+            /* font-size: 3rem;
+            padding: 3rem; */
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="Third">This is third heading</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .container
+        {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* initialize the flex box */
+            display: flex;
+            /* justify-content: space-evenly; */
+            /* flex-wrap: wrap-reverse; */
+        }
+        h1
+        {
+            /* display: flex; */
+        }
+        .item
+        {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+
+        }
+        #item1
+        {
+            /* higher the order it will decide its position */
+            order: 2;
+            /* the higher the number it will grow that much faster */
+            flex-grow: 3;
+        }
+        #item2
+        {
+            flex-grow: 4;
+        }        
+        #item2
+        {
+
+        }        
+
+    </style>
+</head>
+<body>
+    <h1>This is the flex tutorial</h1>
+    <div class="container">
+        <div class="item" id="item1">first box</div>
+        <div class="item" id="item2">second box</div>
+        <div class="item" id="item3">third box</div>
+        <!-- <div class="item" id="item4">fourth box</div>
+        <div class="item" id="item5">fifth box</div>
+        <div class="item" id="item6">sixth box</div> -->
+    </div>
+</body>
+</html>
